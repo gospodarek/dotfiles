@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/marsha/Dev/Providigm/abaqis2'
+let g:netrw_dirhist_2='/Users/marshagospodarek/Dev/Providigm/abaqis2'
+let g:netrw_dirhist_3='/Users/marshagospodarek/Dev/Providigm/abaqisFE/.git'
+let g:netrw_dirhist_4='/Users/marshagospodarek/Dev/Providigm/abaqisFE/.git/objects'
