@@ -1,6 +1,6 @@
 #
-alias abe='cd ~/Dev/NHQ/abaqis-be'
-alias afe='cd ~/Dev/NHQ/abaqis-fe'
+alias abe='cd ~/Dev/Providigm/abaqis-be'
+alias afe='cd ~/Dev/Providigm/abaqis-fe'
 alias mixs='iex -S mix'
 alias cls='clear'
 alias wget='curl -O'
