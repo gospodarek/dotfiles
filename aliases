@@ -1,6 +1,8 @@
 #
-alias abe='cd ~/Dev/Providigm/abaqis-be'
-alias afe='cd ~/Dev/Providigm/abaqis-fe'
+alias adk='cd ~/Dev/Providigm/abaqis-docker/'
+alias pm='cd ~/Dev/Providigm/qandc-policymanager-policy-manager-app'
+alias abe='cd ~/Dev/Providigm/abaqis-docker/abaqis-be'
+alias afe='cd ~/Dev/Providigm/abaqis-docker/abaqis-fe'
 alias mixs='iex -S mix'
 alias cls='clear'
 alias wget='curl -O'
@@ -8,8 +10,8 @@ alias kx="ps -ef | grep ngin | grep -v grep | awk '{print $2}' | sudo xargs kill
 alias psr='ps aux | grep '
 alias rrg='rake routes | grep '
 # Servers
-alias dev='env DUO_PASSCODE=push ssh mgospodarek@dev.abaqis.com'
-alias dev7='env DUO_PASSCODE=push ssh mgospodarek@dev7.abaqis.com'
+alias j6='env DUO_PASSCODE=push ssh mgospodarek@jmp6.abaqis.com'
+alias j7='env DUO_PASSCODE=push ssh mgospodarek@jmp7.abaqis.com'
 alias cap3='cap'
 alias dk='docker'
 alias dkclean='docker rm `docker ps -aq -f status=exited`'

@@ -1,2 +1,8 @@
 # Disable the startup message
+
+startup_message off
+caption always '%c:%s'
+altscreen on
+shell -$SHELL
+defscrollback 1000  		# length of scrollback to keep
 startup_message off
