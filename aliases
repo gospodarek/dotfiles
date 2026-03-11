@@ -1,17 +1,17 @@
-#
-alias adk='cd ~/Dev/Providigm/abaqis-docker/'
-alias pm='cd ~/Dev/Providigm/qandc-policymanager-policy-manager-app'
-alias abe='cd ~/Dev/Providigm/abaqis-docker/abaqis-be'
-alias afe='cd ~/Dev/Providigm/abaqis-docker/abaqis-fe'
-alias mixs='iex -S mix'
-alias cls='clear'
+alias pm='cd ~/Dev/HSTM/PolicyManager'
+alias qm='cd ~/Dev/HSTM/QualityManager'
+alias builder='cd ~/Dev/HSTM/MDS3Builder'
 alias wget='curl -O'
 alias kx="ps -ef | grep ngin | grep -v grep | awk '{print $2}' | sudo xargs kill -9"
 alias psr='ps aux | grep '
 alias rrg='rake routes | grep '
-# Servers
-alias j6='env DUO_PASSCODE=push ssh mgospodarek@jmp6.abaqis.com'
-alias j7='env DUO_PASSCODE=push ssh mgospodarek@jmp7.abaqis.com'
+
+# New QM Servers
+alias qmm='ssh marsha@10.216.42.62'
+
+
+# QM Servers
+alias dev='ssh -i ~/.ssh/id_rsa marsha@pw9-qm-prd-dev.hstmquality.com'
 alias cap3='cap'
 alias dk='docker'
 alias dkclean='docker rm `docker ps -aq -f status=exited`'
@@ -19,6 +19,12 @@ alias dkcleanhard='docker rm -f `docker ps -aq`'
 alias dki='docker images'
 alias dkrmi='docker rmi'
 alias dkb='docker build'
+alias qmans='ssh -i ~/.ssh/quality-manager-prd.ed25519.kp.pem rocky@10.189.96.45'
+
+# PM Servers
+alias pmj='ssh marsha@pw9-pm-prd-ans.hstmpolicy.com'
+alias pmans='ssh -i ~/.ssh/policy-manager-prd.ed25519.kp.pem rocky@ec2-54-82-4-106.compute-1.amazonaws.com'
+
 # for shell user
 alias dkr1='docker run -it --rm --entrypoint sh'
 # for daemon with ports
@@ -30,13 +36,6 @@ alias esg='env | grep'
 alias gs='git status'
 alias gc='git commit -a'
 alias mrg='mix routes | grep'
-# Kubectl stuff
-alias ku='kubectl'
-alias kup='kubectl get pods -o wide'
-alias kul='kubectl logs'
-alias kud='kubectl describe'
-alias kuc='kubectl config get-contexts'
-alias kux='kubectl exec -it '
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
